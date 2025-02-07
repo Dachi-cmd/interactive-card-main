@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -43,11 +44,30 @@
         </div>
       </div>
 
-      <div>
-        <!-- <form action="">
-          <label for=""></label>
-          <input type="text" />
-        </form> -->
+      <div id="form">
+        <form action="">
+          <label class="form_label" for="">CARDHOLDER NAME</label>
+          <input class="user_info" type="text" placeholder="e.g. Jane appleased">
+
+          <label class="form_label" for="">CARD NUMBER</label>
+          <input class="user_info" type="number" placeholder="e.g. 1234 5678 9123 0000">
+          
+          <div class="card_data_container">
+          <div class="item gap">
+            <label class="form_label" for="">EXP. DATE (MM/YY)</label>
+            <div class="card_data">
+              <input class="user_info" type="number" placeholder="MM">
+              <input class="user_info" type="number" placeholder="YY">
+            </div>
+            
+          </div>
+          <div class="item">
+            <label class="form_label" for="">CVC</label>
+            <input class="user_info" type="text" placeholder="e.g. 123">
+          </div>
+          </div>
+          <button class="confirm_btn">Confirm</button>
+        </form>
       </div>
     </div>
   </body>
