@@ -160,13 +160,13 @@ body {
 
 .card_data_container {
   display: grid;
-  grid-template-columns: 170px 191px; /* First column 10px, second 10px, third 20px */
+  grid-template-columns: 170px 191px; 
   gap: 20px;
 }
 
 .card_data {
   display: grid;
-  grid-template-columns: 80px 80px; /* First column 10px, second 10px, third 20px */
+  grid-template-columns: 80px 80px; 
   gap: 10px;
 }
 
@@ -180,6 +180,29 @@ body {
   font-size: 18px;
   font-weight: 500;
   line-height: 22.97px;
+}
+
+@media (width < 768px) {
+  #form {
+    position: absolute;
+    width: 327px;
+    height: 328px;
+    margin-left: 50%;
+    margin-top: 311px;
+    transform: translate(-50%); 
+  }
+  
+  .card_data_container {
+    display: grid;
+    grid-template-columns: 152px 164px; 
+    gap: 11px;
+  }
+  
+  .card_data {
+    display: grid;
+    grid-template-columns: 72px 72px;
+    gap: 8px;
+  }
 }
 
 /* for desktop */
